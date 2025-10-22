@@ -1,0 +1,262 @@
+.home {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.heroCTA {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background-color: #8b3a1f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #6b2d17;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #8b3a1f;
+  padding: 0.75rem 2rem;
+  border: 2px solid #8b3a1f;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.secondaryButton:hover {
+  background-color: #8b3a1f;
+  color: white;
+}
+
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Features Section */
+.features {
+  background-color: #f9fafb;
+  padding: 4rem 1rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.featureGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.featureIcon {
+  color: #8b3a1f;
+  margin: 0 auto 1rem;
+}
+
+.featureCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.featureCard p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Services Preview Section */
+.servicesPreview {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.servicesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.serviceItem {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.serviceItem img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.serviceItem h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1f2937;
+  padding: 1.5rem 1.5rem 0.5rem;
+  margin: 0;
+}
+
+.serviceItem p {
+  color: #6b7280;
+  padding: 0 1.5rem 1.5rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.previewCTA {
+  text-align: center;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(135deg, #8b3a1f 0%, #6b2d17 100%);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .ctaSection h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.ctaSection p {
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+  opacity: 0.95;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #8b3a1f;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+}
+

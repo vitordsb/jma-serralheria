@@ -1,0 +1,120 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoImg {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.desktopNav {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+
+  .menuButton {
+    display: none;
+  }
+}
+
+.navLink {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #8b3a1f;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b3a1f;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #374151;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.menuButton:hover {
+  color: #8b3a1f;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNavLink {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+}
+
+.mobileNavLink:hover {
+  background-color: #f3f4f6;
+  color: #8b3a1f;
+}
+

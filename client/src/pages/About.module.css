@@ -1,0 +1,115 @@
+.about {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+  border-bottom: 3px solid #8b3a1f;
+  padding-bottom: 0.75rem;
+}
+
+.section p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.valuesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.valuesList li {
+  color: #6b7280;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.valuesList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #8b3a1f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.valuesList strong {
+  color: #1f2937;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.reason {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #8b3a1f;
+}
+
+.reason h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.reason p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
