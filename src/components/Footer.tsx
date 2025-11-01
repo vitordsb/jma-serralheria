@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>JMA Serralheria</h3>
           <p className={styles.description}>
-            Serviços de serralheria de qualidade com mais de 10 anos de experiência no mercado.
+            Desde 1992 fazendo serviços com qualidade e relevância no mercado.
           </p>
         </div>
 
