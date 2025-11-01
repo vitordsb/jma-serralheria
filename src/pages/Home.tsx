@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Wrench, Shield, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { servicesData } from "@/data/services";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -53,26 +54,13 @@ export default function Home() {
       <section className={styles.servicesPreview}>
         <h2 className={styles.sectionTitle}>Nossos Serviços</h2>
         <div className={styles.servicesList}>
-          <div className={styles.serviceItem}>
-            <img src="/projects/p7V6xz3GbRJv.jpg" alt="Estruturas Metálicas" />
-            <h3>Estruturas Metálicas</h3>
-            <p>Coberturas, mezaninos e estruturas personalizadas para sua necessidade.</p>
-          </div>
-          <div className={styles.serviceItem}>
-            <img src="/projects/ScEV0CDSixjW.jpg" alt="Rampas para Docas e Caminhões" />
-            <h3>Rampas para Docas</h3>
-            <p>Fabricação e reforma de rampas metálicas sob medida para carga e descarga.</p>
-          </div>
-          <div className={styles.serviceItem}>
-            <img src="/projects/8NKevbKmzSw3.jpg" alt="Portões" />
-            <h3>Portões</h3>
-            <p>Portões automáticos, deslizantes e basculantes de alta qualidade.</p>
-          </div>
-          <div className={styles.serviceItem}>
-            <img src="/projects/MDlcGq3CvCGF.jpg" alt="Grades de Proteção" />
-            <h3>Grades de Proteção</h3>
-            <p>Grades de proteção personalizadas para residências e comércios.</p>
-          </div>
+          {servicesData.map((service) => (
+            <div key={service.title} className={styles.serviceItem}>
+              <img src={service.image} alt={service.title} />
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
         </div>
         <div className={styles.previewCTA}>
           <Link href="/galeria">
