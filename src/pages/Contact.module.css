@@ -57,7 +57,7 @@
   font-weight: 600;
   color: #1f2937;
   margin: 0 0 1rem 0;
-  border-bottom: 3px solid #8b3a1f;
+  border-bottom: 3px solid #B71C1C;
   padding-bottom: 0.75rem;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .icon {
-  color: #8b3a1f;
+  color: #B71C1C;
   flex-shrink: 0;
 }
 
@@ -89,14 +89,14 @@
 }
 
 .infoCard a {
-  color: #8b3a1f;
+  color: #B71C1C;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .infoCard a:hover {
-  color: #6b2d17;
+  color: #8C1313;
   text-decoration: underline;
 }
 
@@ -111,7 +111,7 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #8b3a1f;
+  border-left: 4px solid #B71C1C;
 }
 
 .hoursCard h3 {
@@ -229,7 +229,7 @@
   color: #1f2937;
   text-align: center;
   margin: 0 0 2rem 0;
-  border-bottom: 3px solid #8b3a1f;
+  border-bottom: 3px solid #B71C1C;
   padding-bottom: 1rem;
 }
 
@@ -282,4 +282,3 @@
     font-size: 1.3rem;
   }
 }
-

@@ -15,6 +15,19 @@ export default function Services() {
       image: "/projects/p7V6xz3GbRJv.jpg"
     },
     {
+      title: "Rampas para Docas e Caminhões",
+      description:
+        "Fabricação e reforma de rampas metálicas sob medida para passagem de caminhões e áreas de carga/descarga.",
+      details: [
+        "Rampas para docas industriais e galpões logísticos",
+        "Dimensionamento conforme chapa, medida e espessura informadas",
+        "Modelos fixos, removíveis ou articulados conforme a necessidade",
+        "Reforços estruturais para alto tráfego e cargas pesadas",
+        "Reforma e adequação de rampas existentes"
+      ],
+      image: "/projects/ScEV0CDSixjW.jpg"
+    },
+    {
       title: "Portões",
       description: "Portões de alta qualidade em diversos modelos e estilos para sua residência ou comércio.",
       details: [
@@ -41,17 +54,18 @@ export default function Services() {
       image: "/projects/MDlcGq3CvCGF.jpg"
     },
     {
-      title: "Serviços Adicionais",
-      description: "Outros serviços de serralheria para completar seu projeto.",
+      title: "Fabricação e Reforma Sob Medida",
+      description:
+        "Atendemos projetos personalizados de serralheria — fabricamos e reformamos conforme a sua necessidade.",
       details: [
-        "Conserto e reparo de estruturas metálicas",
-        "Soldagem profissional de alta qualidade",
-        "Corte e dobra de metais conforme especificação",
-        "Pintura e acabamento de peças metálicas",
-        "Manutenção preventiva de estruturas",
-        "Consultoria técnica para seus projetos"
+        "Reformas completas de peças e estruturas metálicas",
+        "Corte, dobra e soldagem conforme desenho ou orientação",
+        "Adequações e reforços estruturais em projetos existentes",
+        "Acabamento com pintura ou galvanização",
+        "Atendimento a medidas especiais e prazos acordados",
+        "Consultoria para definição de chapa/espessura adequada"
       ],
-      image: "/projects/ScEV0CDSixjW.jpg"
+      image: "/projects/u81Ul7RoBJe9.jpg"
     }
   ];
 
@@ -93,4 +107,3 @@ export default function Services() {
     </div>
   );
 }
-

@@ -14,8 +14,9 @@ export default function About() {
               Nascemos com o compromisso de oferecer soluções de qualidade, durabilidade e confiança para nossos clientes.
             </p>
             <p>
-              Ao longo dos anos, desenvolvemos expertise em estruturas metálicas, portões e grades de proteção, atendendo residências, 
-              comércios e indústrias em toda a região de Cotia e arredores.
+              Atuamos com fabricação e reforma sob medida: estruturas metálicas, portões, grades de proteção e, principalmente,
+              rampas para docas e passagem de caminhões, dimensionadas conforme chapa, medida e espessura informadas.
+              Atendemos residências, comércios e indústrias em toda a região de Cotia e arredores.
             </p>
           </section>
 
@@ -74,4 +75,3 @@ export default function About() {
     </div>
   );
 }
-

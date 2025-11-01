@@ -11,7 +11,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Serralheria de Qualidade e Confiança</h1>
           <p className={styles.heroSubtitle}>
-            Estruturas metálicas, portões e grades de proteção com mais de 10 anos de experiência
+            Fabricação e reforma sob medida — rampas para docas e caminhões, estruturas, portões e grades.
           </p>
           <div className={styles.heroCTA}>
             <Link href="/servicos">
@@ -59,6 +59,11 @@ export default function Home() {
             <p>Coberturas, mezaninos e estruturas personalizadas para sua necessidade.</p>
           </div>
           <div className={styles.serviceItem}>
+            <img src="/projects/ScEV0CDSixjW.jpg" alt="Rampas para Docas e Caminhões" />
+            <h3>Rampas para Docas</h3>
+            <p>Fabricação e reforma de rampas metálicas sob medida para carga e descarga.</p>
+          </div>
+          <div className={styles.serviceItem}>
             <img src="/projects/8NKevbKmzSw3.jpg" alt="Portões" />
             <h3>Portões</h3>
             <p>Portões automáticos, deslizantes e basculantes de alta qualidade.</p>
@@ -87,4 +92,3 @@ export default function Home() {
     </div>
   );
 }
-

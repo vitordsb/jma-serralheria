@@ -56,14 +56,14 @@
 }
 
 .filterButton:hover {
-  border-color: #8b3a1f;
-  color: #8b3a1f;
+  border-color: #B71C1C;
+  color: #B71C1C;
 }
 
 .filterButton.active {
-  background-color: #8b3a1f;
+  background-color: #B71C1C;
   color: white;
-  border-color: #8b3a1f;
+  border-color: #B71C1C;
 }
 
 .projectsGrid {
@@ -117,7 +117,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(139, 58, 31, 0.85);
+  background-color: rgba(198, 40, 40, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +173,7 @@
 }
 
 .ctaBox {
-  background: linear-gradient(135deg, #8b3a1f 0%, #6b2d17 100%);
+  background-color: #C62828;
   color: white;
   padding: 3rem;
   border-radius: 0.75rem;
@@ -206,7 +206,7 @@
 .ctaButton {
   display: inline-block;
   background-color: white;
-  color: #8b3a1f;
+  color: #B71C1C;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -218,4 +218,3 @@
   background-color: #f3f4f6;
   transform: scale(1.05);
 }
-

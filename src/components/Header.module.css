@@ -40,10 +40,6 @@
   .desktopNav {
     display: flex;
   }
-
-  .menuButton {
-    display: none;
-  }
 }
 
 .navLink {
@@ -56,7 +52,7 @@
 }
 
 .navLink:hover {
-  color: #8b3a1f;
+  color: #B71C1C;
 }
 
 .navLink::after {
@@ -66,7 +62,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #8b3a1f;
+  background-color: #B71C1C;
   transition: width 0.3s ease;
 }
 
@@ -75,7 +71,7 @@
 }
 
 .menuButton {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: none;
@@ -87,7 +83,13 @@
 }
 
 .menuButton:hover {
-  color: #8b3a1f;
+  color: #B71C1C;
+}
+
+@media (max-width: 767px) {
+  .menuButton {
+    display: flex;
+  }
 }
 
 .mobileNav {
@@ -115,6 +117,5 @@
 
 .mobileNavLink:hover {
   background-color: #f3f4f6;
-  color: #8b3a1f;
+  color: #B71C1C;
 }
-

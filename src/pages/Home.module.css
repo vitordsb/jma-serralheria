@@ -55,7 +55,7 @@
 }
 
 .primaryButton {
-  background-color: #8b3a1f;
+  background-color: #c62828;
   color: white;
   padding: 0.75rem 2rem;
   border: none;
@@ -68,14 +68,14 @@
 }
 
 .primaryButton:hover {
-  background-color: #6b2d17;
+  background-color: #8C1313;
 }
 
 .secondaryButton {
   background-color: transparent;
-  color: #8b3a1f;
+  color: #B71C1C;
   padding: 0.75rem 2rem;
-  border: 2px solid #8b3a1f;
+  border: 2px solid #B71C1C;
   border-radius: 0.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -85,7 +85,7 @@
 }
 
 .secondaryButton:hover {
-  background-color: #8b3a1f;
+  background-color: #B71C1C;
   color: white;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .featureIcon {
-  color: #8b3a1f;
+  color: #C62828;
   margin: 0 auto 1rem;
 }
 
@@ -218,7 +218,7 @@
 
 /* CTA Section */
 .ctaSection {
-  background: linear-gradient(135deg, #8b3a1f 0%, #6b2d17 100%);
+  background-color: #C62828;
   color: white;
   padding: 4rem 1rem;
   text-align: center;
@@ -244,7 +244,7 @@
 
 .ctaButton {
   background-color: white;
-  color: #8b3a1f;
+  color: #C62828;
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 0.5rem;
@@ -256,7 +256,6 @@
 }
 
 .ctaButton:hover {
-  background-color: #f3f4f6;
+  background-color: #f3f4f7;
   transform: scale(1.05);
 }
-

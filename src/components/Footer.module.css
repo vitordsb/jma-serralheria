@@ -37,23 +37,23 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #d1d5db;
+  color: #ffffff;
   font-size: 0.95rem;
 }
 
 .contactItem a {
-  color: #fbbf24;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contactItem a:hover {
-  color: #fcd34d;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .contactItem svg {
-  color: #8b3a1f;
+  color: #C62828;
   flex-shrink: 0;
 }
 
@@ -71,4 +71,3 @@
     padding: 2rem 1rem;
   }
 }
-

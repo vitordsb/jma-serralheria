@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>&copy; 2024 JMA Serralheria. Todos os direitos reservados.</p>
+        <p>&copy; 2025 JMA Serralheria. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
