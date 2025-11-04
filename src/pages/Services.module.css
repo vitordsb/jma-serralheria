@@ -32,10 +32,33 @@
 }
 
 .servicesList {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
   margin-bottom: 4rem;
+  align-items: stretch;
+}
+
+.showMoreWrapper {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.showMoreButton {
+  background-color: transparent;
+  color: #B71C1C;
+  border: 2px solid #B71C1C;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.showMoreButton:hover {
+  background-color: #B71C1C;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .serviceCard {
@@ -43,8 +66,8 @@
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 0.3s ease;
 }
 
@@ -52,36 +75,8 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-@media (max-width: 768px) {
-  .serviceCard {
-    grid-template-columns: 1fr;
-  }
-}
-
-.serviceCard:nth-child(even) {
-  grid-template-columns: 1fr 1fr;
-}
-
-.serviceCard:nth-child(even) .serviceImage {
-  order: 2;
-}
-
-.serviceCard:nth-child(even) .serviceContent {
-  order: 1;
-}
-
-@media (max-width: 768px) {
-  .serviceCard:nth-child(even) {
-    grid-template-columns: 1fr;
-  }
-
-  .serviceCard:nth-child(even) .serviceImage {
-    order: 1;
-  }
-
-  .serviceCard:nth-child(even) .serviceContent {
-    order: 2;
-  }
+.serviceCard:hover .serviceImage img {
+  transform: scale(1.05);
 }
 
 .serviceImage {
@@ -93,22 +88,23 @@
 
 .serviceImage img {
   width: 100%;
-  height: 100%;
+  height: 240px;
   object-fit: cover;
-  min-height: 400px;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
   .serviceImage img {
-    min-height: 250px;
+    height: 220px;
   }
 }
 
 .serviceContent {
-  padding: 2.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1.25rem;
+  flex: 1;
 }
 
 @media (max-width: 768px) {
@@ -121,9 +117,7 @@
   font-size: 1.8rem;
   font-weight: 600;
   color: #1f2937;
-  margin: 0 0 1rem 0;
-  border-bottom: 3px solid #B71C1C;
-  padding-bottom: 0.75rem;
+  margin: 0;
 }
 
 .serviceDescription {
@@ -131,6 +125,37 @@
   color: #6b7280;
   margin: 0 0 1.5rem 0;
   line-height: 1.6;
+}
+
+.whatsappButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #25d366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+}
+
+.whatsappButton:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(37, 211, 102, 0.45);
+}
+
+.whatsappIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+}
+
+.whatsappIcon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .detailsList {
