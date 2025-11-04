@@ -10,35 +10,40 @@ export default function Gallery() {
       title: "Cobertura Metálica - Residencial",
       category: "estruturas",
       image: "/projects/u81Ul7RoBJe9.jpg",
-      description: "Cobertura metálica moderna para área de lazer residencial"
+      description:
+        "Estrutura tubular com telha termoacústica e calhas embutidas, criando uma área de lazer protegida e confortável para uso diário."
     },
     {
       id: 2,
       title: "Estrutura Metálica Industrial",
       category: "estruturas",
       image: "/projects/p7V6xz3GbRJv.jpg",
-      description: "Estrutura metálica robusta para uso industrial"
+      description:
+        "Pórticos e vigas dimensionados para cargas industriais, com soldas contínuas e travamentos que sustentam pontes rolantes e passarelas técnicas."
     },
     {
       id: 3,
       title: "Portão Automático",
       category: "portoes",
       image: "/projects/8NKevbKmzSw3.jpg",
-      description: "Portão automático com sistema de segurança"
+      description:
+        "Portão de correr motorizado com trilho nivelado e fecho eletrônico, pensado para agilizar o acesso sem comprometer a segurança perimetral."
     },
     {
       id: 4,
       title: "Grades de Proteção",
       category: "grades",
       image: "/projects/MDlcGq3CvCGF.jpg",
-      description: "Grades de proteção com design elegante"
+      description:
+        "Painéis modulares com solda MIG e pintura eletrostática, entregando proteção contínua para janelas e frentes comerciais com acabamento refinado."
     },
     {
       id: 5,
       title: "Estrutura Metálica - Comercial",
       category: "estruturas",
       image: "/projects/ScEV0CDSixjW.jpg",
-      description: "Estrutura metálica para estabelecimento comercial"
+      description:
+        "Cobertura metálica comercial com pilares aparafusados e fechamento em policarbonato, garantindo luminosidade natural e resistência a intempéries."
     }
   ];
 
@@ -117,4 +122,3 @@ export default function Gallery() {
     </div>
   );
 }
-

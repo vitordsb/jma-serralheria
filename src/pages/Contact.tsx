@@ -38,7 +38,7 @@ export default function Contact() {
               <Mail className={styles.icon} size={32} />
               <div>
                 <h3>Email</h3>
-                <a href="mailto:jmaserralheria.alves@gmail.com">jmaserralheria.alves@gmail.com</a>
+                <a href="mailto:jmaserralheria.artes@gmail.com">jmaserralheria.artes@gmail.com</a>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
             <div className={styles.reason}>
               <h3>Equipe Experiente</h3>
-              <p>Nossa equipe tem mais de 10 anos de experiência no mercado.</p>
+              <p>Profissionais que atuam em serralheria industrial desde 1992, acompanhando cada instalação.</p>
             </div>
           </div>
         </div>
@@ -118,4 +118,3 @@ export default function Contact() {
     </div>
   );
 }
-

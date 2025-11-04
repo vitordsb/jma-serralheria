@@ -10,32 +10,35 @@ export default function About() {
           <section className={styles.section}>
             <h2>Nossa História</h2>
             <p>
-              A JMA Serralheria é uma empresa consolidada no mercado com mais de 10 anos de experiência em serviços de serralheria. 
-              Nascemos com o compromisso de oferecer soluções de qualidade, durabilidade e confiança para nossos clientes.
+              Desde 1992, a JMA Serralheria transforma aço em estruturas inteligentes que mantêm operações funcionando com segurança.
+              Surgimos como uma oficina familiar e evoluímos para um time especializado em projetos industriais completos.
             </p>
             <p>
-              Atuamos com fabricação e reforma sob medida: estruturas metálicas, portões, grades de proteção e, principalmente,
-              rampas para docas e passagem de caminhões, dimensionadas conforme chapa, medida e espessura informadas.
-              Atendemos residências, comércios e indústrias em toda a região de Cotia e arredores.
+              Crescemos junto com nossos clientes — empresas que precisam de rampas para docas, proteções para linhas de produção,
+              estruturas aéreas, portões automatizados e adequações especiais que mantêm a rotina segura e organizada.
+            </p>
+            <p>
+              Somos parceiros de manutenção e engenharia, atuando desde a visita técnica até a montagem final, sempre com acabamento
+              refinado e respeito aos prazos combinados.
             </p>
           </section>
 
           <section className={styles.section}>
             <h2>Nossa Missão</h2>
             <p>
-              Fornecer serviços de serralheria de excelência, utilizando os melhores materiais e técnicas, garantindo a satisfação 
-              e confiança de nossos clientes através de trabalhos duráveis e seguros.
+              Entregar soluções de serralheria que resolvam desafios reais da operação dos nossos clientes, utilizando materiais certificados,
+              processos controlados e uma equipe que cuida de cada etapa do projeto.
             </p>
           </section>
 
           <section className={styles.section}>
             <h2>Nossos Valores</h2>
             <ul className={styles.valuesList}>
-              <li><strong>Qualidade:</strong> Utilizamos apenas materiais de primeira qualidade e técnicas comprovadas.</li>
-              <li><strong>Confiança:</strong> Nossos clientes confiam em nosso trabalho e compromisso com prazos.</li>
-              <li><strong>Segurança:</strong> Todos os projetos seguem normas de segurança exigidas pelo mercado.</li>
-              <li><strong>Inovação:</strong> Acompanhamos as tendências e inovações do mercado de serralheria.</li>
-              <li><strong>Atendimento:</strong> Oferecemos atendimento personalizado e consultoria para cada projeto.</li>
+              <li><strong>Qualidade Industrial:</strong> Materiais e acabamentos pensados para resistir a ambientes exigentes.</li>
+              <li><strong>Confiança Total:</strong> Parcerias de longo prazo construídas com transparência e cumprimento de prazos.</li>
+              <li><strong>Segurança em Primeiro Lugar:</strong> Projetos alinhados às normas e boas práticas que evitam paradas.</li>
+              <li><strong>Inovação na Medida:</strong> Soluções personalizadas que combinam experiência com novas tecnologias.</li>
+              <li><strong>Atendimento Consultivo:</strong> Entendemos o desafio antes de propor a melhor alternativa técnica.</li>
             </ul>
           </section>
 
@@ -43,32 +46,22 @@ export default function About() {
             <h2>Por Que Escolher a JMA?</h2>
             <div className={styles.reasons}>
               <div className={styles.reason}>
-                <h3>Experiência Comprovada</h3>
-                <p>Mais de 10 anos de experiência em serviços de serralheria com clientes satisfeitos.</p>
+                <h3>Tradição em Movimento</h3>
+                <p>Mais de três décadas entregando estruturas metálicas sob medida para indústrias e comércios.</p>
               </div>
               <div className={styles.reason}>
                 <h3>Qualidade Premium</h3>
-                <p>Utilizamos os melhores materiais e técnicas para garantir durabilidade e beleza.</p>
+                <p>Processos de fabricação internos e soldas certificadas asseguram durabilidade e acabamento superior.</p>
               </div>
               <div className={styles.reason}>
                 <h3>Atendimento Personalizado</h3>
-                <p>Cada projeto é único e recebe atenção especial de nossa equipe.</p>
+                <p>Projetos acompanhados de perto, com relatórios de evolução e ajustes conforme a necessidade.</p>
               </div>
               <div className={styles.reason}>
                 <h3>Segurança Garantida</h3>
-                <p>Todos os projetos seguem normas de segurança e qualidade do mercado.</p>
+                <p>Entrega com checklist técnico, inspeção final e orientação de uso para a sua equipe.</p>
               </div>
             </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>Localização</h2>
-            <p>
-              Estamos localizados em Cotia - SP, com fácil acesso para atender toda a região metropolitana de São Paulo.
-            </p>
-            <p>
-              <strong>Endereço:</strong> R. Pinhal, 252 - Jardim Sabiá, Cotia - SP, 06716-575
-            </p>
           </section>
         </div>
       </div>

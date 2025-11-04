@@ -13,10 +13,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Serralheria de Qualidade e Confiança</h1>
+          <h1 className={styles.heroTitle}>Estruturas Metálicas Sob Medida desde 1992</h1>
           <p className={styles.heroSubtitle}>
-            Rampas de todo tamanho e espessura, proteções metálicas, mesas industriais e soluções sob medida para a
-            sua empresa.
+            Rampas para docas, proteções industriais, mesas móveis e soluções construídas pela JMA para manter sua
+            operação segura e produtiva.
           </p>
           <div className={styles.heroCTA}>
             <Link href="/servicos">
@@ -26,9 +26,6 @@ export default function Home() {
               <Button className={styles.secondaryButton}>Solicitar Orçamento</Button>
             </Link>
           </div>
-        </div>
-        <div className={styles.heroImage}>
-          <img src="/projects/u81Ul7RoBJe9.jpg" alt="Estrutura metálica" />
         </div>
       </section>
 
@@ -48,8 +45,8 @@ export default function Home() {
           </div>
           <div className={styles.featureCard}>
             <Award size={40} className={styles.featureIcon} />
-            <h3>Experiência Comprovada</h3>
-            <p>Mais de 10 anos atendendo clientes satisfeitos em toda a região de Cotia.</p>
+            <h3>Tradição desde 1992</h3>
+            <p>Mais de três décadas acompanhando o dia a dia de indústrias, comércios e operadores logísticos.</p>
           </div>
         </div>
       </section>
