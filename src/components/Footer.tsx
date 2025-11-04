@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className={styles.contactItem}>
             <Mail size={18} />
-            <a href="mailto:jmaserralheria.artes@gmail.com">jmaserralheria.artes@gmail.com</a>
+            <a href="mailto:jmaserralheria.artesgmail.com">jmaserralheria.artes@gmail.com</a>
           </div>
           <div className={styles.contactItem}>
             <MapPin size={18} />

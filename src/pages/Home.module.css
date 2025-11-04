@@ -6,49 +6,39 @@
 .hero {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 1rem;
-  border-radius: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 6rem 1rem;
   background-image: linear-gradient(
-      rgba(17, 24, 39, 0.78),
-      rgba(17, 24, 39, 0.58)
+      rgba(17, 24, 39, 0.8),
+      rgba(17, 24, 39, 0.65)
     ),
     url("/projects/servicos/servicos-personalizados.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
   }
 }
 
 .heroContent {
-  max-width: 540px;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 2.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .heroContent {
-    padding: 2rem;
-  }
 }
 
 .heroTitle {
   font-size: 3rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #f9fafb;
   line-height: 1.2;
   margin: 0;
 }
@@ -61,7 +51,7 @@
 
 .heroSubtitle {
   font-size: 1.2rem;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
   margin: 0;
 }
@@ -70,6 +60,7 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .primaryButton {
@@ -82,7 +73,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primaryButton:hover {
@@ -91,20 +84,22 @@
 
 .secondaryButton {
   background-color: transparent;
-  color: #B71C1C;
+  color: #ffffff;
   padding: 0.75rem 2rem;
-  border: 2px solid #B71C1C;
+  border: 2px solid rgba(255, 255, 255, 0.75);
   border-radius: 0.5rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondaryButton:hover {
-  background-color: #B71C1C;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 /* Features Section */
