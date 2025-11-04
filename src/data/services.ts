@@ -9,7 +9,7 @@ export const servicesData: Service[] = [
   {
     title: "Rampas Metálicas Sob Medida",
     description:
-      "Rampas de todo tamanho e espessura para docas, caminhões e acessos logísticos – serviço completo para empresas, feito pela JMA.",
+      "Rampas fabricadas em chapa xadrez antiderrapante, com laterais reforçadas e encaixes para empilhadeira, ideais para nivelar docas e manter o fluxo de carga seguro.",
     details: [
       "Dimensionamento conforme fluxo de veículos, equipamentos e capacidade de carga",
       "Construção com chapas reforçadas, reforços estruturais e soldagem certificada",
@@ -19,7 +19,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Caçambas Metálicas",
-    description: "Caçambas robustas para resíduos industriais, sucata e movimentação interna.",
+    description:
+      "Caçambas basculantes com reforço inferior e bordas dobradas, prontas para receber ganchos de empilhadeira e suportar o atrito constante de sucata pesada.",
     details: [
       "Projeto conforme volume, espessura e tipo de material a ser transportado",
       "Reforços estruturais para empilhadeiras e pontes rolantes",
@@ -29,7 +30,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Mãos Francesas e Suportes",
-    description: "Mãos francesas, suportes e prateleiras metálicas fabricadas sob medida.",
+    description:
+      "Suportes metálicos triangulados, modelados conforme o vão e a carga de máquinas, entregues com furações e chumbamentos alinhados para montagem rápida.",
     details: [
       "Dimensionamento conforme carga, vão livre e aplicação",
       "Fixação com chumbadores químicos, parafusos ou solda estrutural",
@@ -39,7 +41,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Mesas de Refeitório Industriais",
-    description: "Mesas fixas ou desmontáveis projetadas para refeitórios corporativos.",
+    description:
+      "Mesas tubulares com tampos lisos de fácil higienização e bancos integrados, dimensionadas para acomodar equipes em revezamento sem perder a organização.",
     details: [
       "Estruturas metálicas com tampos resistentes a limpeza frequente",
       "Assentos articulados ou fixos para otimizar espaço",
@@ -49,7 +52,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Mesas com Rodízios",
-    description: "Estações móveis para linhas de produção e áreas de apoio.",
+    description:
+      "Bancadas de serviço com prateleira inferior e rodízios industriais com trava, ideais para movimentar ferramentas entre estações sem perder estabilidade.",
     details: [
       "Rodízios industriais com travas para segurança no uso",
       "Estruturas projetadas para suportar pesos elevados",
@@ -59,7 +63,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Escadas de Apoio com Rodízios",
-    description: "Escadas móveis para manutenção em galpões, portos de carga e estoques elevados.",
+    description:
+      "Escadas de manutenção com degraus antiderrapantes, guarda-corpo nos dois lados e rodízios com pedal de fixação para deslocar com total segurança.",
     details: [
       "Projetos com guarda-corpo e piso antiderrapante",
       "Rodízios com travamento duplo para estabilidade total",
@@ -69,7 +74,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Corrimões de Segurança",
-    description: "Corrimões amarelos com alto contraste para circulação segura em áreas industriais.",
+    description:
+      "Corrimões tubulares em amarelo segurança, com montantes rígidos e fixação química que orientam o fluxo de pedestres em áreas críticas da planta.",
     details: [
       "Instalação em escadas, passarelas e áreas externas de alto fluxo",
       "Pintura em esmalte ou poliuretano para máxima durabilidade",
@@ -79,7 +85,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Guarda-Corpo Industrial",
-    description: "Proteções completas para rampas, mezaninos e áreas técnicas.",
+    description:
+      "Guarda-corpos modulares com travessões horizontais e fechamento inferior, projetados para proteger mezaninos, plataformas e passarelas de alto tráfego.",
     details: [
       "Barreiras contra quedas com fechamento metálico sob medida",
       "Fixação química ou mecânica conforme o tipo de piso",
@@ -89,7 +96,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Proteções para Paletes",
-    description: "Dispositivos para proteger estanterias, paletes e pontos de impacto em almoxarifados.",
+    description:
+      "Defensas frontais e abraçadeiras de coluna capazes de absorver impactos de empilhadeiras, preservando estantes, paletes e equipamentos de armazenagem.",
     details: [
       "Defensas, batentes e protetores de coluna com alta resistência",
       "Concepção sob medida para layout logístico existente",
@@ -99,7 +107,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Proteções em Tela",
-    description: "Painéis metálicos em tela para enclausuramento de máquinas e áreas sensíveis.",
+    description:
+      "Painéis em tela eletrossoldada com estrutura tubular e portas com fecho, criando barreiras visuais para máquinas e áreas de risco sem bloquear a ventilação.",
     details: [
       "Atende normas de segurança NR-12 e NR-18",
       "Sistemas de abertura com fechaduras e sensores opcionais",
@@ -109,7 +118,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Trincos e Fechos Metálicos",
-    description: "Produção de trincos, travas e ferragens especiais sob demanda.",
+    description:
+      "Trincos, dobradiças e travas especiais usinados em aço carbono, entregues com tratamentos anticorrosivos para suportar ciclos intensos de abertura.",
     details: [
       "Concepção conforme desenho técnico ou amostra enviada",
       "Tratamentos de superfície para resistência à corrosão",
@@ -119,7 +129,8 @@ export const servicesData: Service[] = [
   },
   {
     title: "Treliças e Estruturas Aéreas",
-    description: "Treliças metálicas para coberturas, passarelas e suportes industriais.",
+    description:
+      "Treliças em perfis soldados com contraventamentos dimensionados, prontas para receber cobertura metálica e vencer grandes vãos em galpões e passarelas.",
     details: [
       "Cálculo estrutural para grandes vãos e cargas distribuídas",
       "Montagem segura em altura com equipe especializada",
@@ -130,7 +141,7 @@ export const servicesData: Service[] = [
   {
     title: "Serviços Personalizados de Serralheria",
     description:
-      "Projetos especiais desenvolvidos em parceria com sua equipe de manutenção e engenharia.",
+      "Desenvolvemos soluções exclusivas em aço, do levantamento em campo ao protótipo final, integrando corte, dobra, usinagem e montagem conforme a necessidade da sua operação.",
     details: [
       "Corte, dobra e soldagem em aço carbono, inox e alumínio",
       "Adequações e reformas de equipamentos já instalados",
