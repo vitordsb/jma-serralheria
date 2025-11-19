@@ -19,6 +19,11 @@ export default function Footer() {
             <a href="tel:11989425749">(11) 98942-5749</a>
           </div>
           <div className={styles.contactItem}>
+            <Phone size={18} />
+            <a href="tel:1146167712">(11) 4616-7712</a>
+          </div>
+
+          <div className={styles.contactItem}>
             <Mail size={18} />
             <a href="mailto:jmaserralheria.artesgmail.com">jmaserralheria.artes@gmail.com</a>
           </div>

@@ -31,6 +31,29 @@
   line-height: 1.6;
 }
 
+.infoBanner {
+  background-color: #fff5f5;
+  color: #7c1d1d;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #fcdada;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.infoBanner strong {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.internalNote {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
 .servicesList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -86,7 +109,18 @@
   overflow: hidden;
 }
 
-.serviceImage img {
+.imagePreviewButton {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 100%;
+  display: block;
+  cursor: zoom-in;
+  position: relative;
+}
+
+.serviceImage img,
+.imagePreviewButton img {
   width: 100%;
   height: 240px;
   object-fit: cover;
@@ -97,6 +131,24 @@
   .serviceImage img {
     height: 220px;
   }
+}
+
+.imagePreviewButton:hover img,
+.imagePreviewButton:focus img {
+  transform: scale(1.05);
+}
+
+.imagePreviewLabel {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .serviceContent {
@@ -228,4 +280,144 @@
 .ctaButton:hover {
   background-color: #f3f4f6;
   transform: scale(1.05);
+}
+
+.segmentsSection {
+  margin: 4rem 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.sectionHeader p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.segmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.segmentCard {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #c62828;
+}
+
+.segmentCard h3 {
+  margin-bottom: 0.75rem;
+  color: #111827;
+  font-size: 1.2rem;
+}
+
+.segmentCard p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.reformSection {
+  margin-bottom: 4rem;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .reformSection {
+    padding: 2rem;
+  }
+}
+
+.reformIntro h2 {
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+}
+
+.reformIntro p {
+  margin: 0 0 2rem;
+  color: rgba(249, 250, 251, 0.85);
+  line-height: 1.6;
+}
+
+.reformGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.reformCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.reformCard h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+}
+
+.reformCard p {
+  margin: 0 0 1rem;
+  color: rgba(249, 250, 251, 0.85);
+  line-height: 1.5;
+}
+
+.reformCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reformCard li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: rgba(249, 250, 251, 0.9);
+}
+
+.reformCard li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #fbbf24;
+}
+
+.externalNotice {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgba(249, 250, 251, 0.85);
+  font-size: 1rem;
+}
+
+.imageDialog {
+  max-width: 720px;
+}
+
+.imageDialog img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.dialogDescription {
+  margin-top: 1rem;
+  color: #4b5563;
 }

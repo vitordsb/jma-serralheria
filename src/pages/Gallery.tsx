@@ -1,62 +1,159 @@
 import { useState } from "react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import styles from "./Gallery.module.css";
+
+type Project = {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+};
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("todos");
+  const [showAll, setShowAll] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const projects = [
+  const projects: Project[] = [
     {
       id: 1,
-      title: "Cobertura Metálica - Residencial",
+      title: "Rampa metálica em operação",
       category: "estruturas",
-      image: "/projects/u81Ul7RoBJe9.jpg",
+      image: "/projects/servicos/rampas-metalicas-final.jpg",
       description:
-        "Estrutura tubular com telha termoacústica e calhas embutidas, criando uma área de lazer protegida e confortável para uso diário."
+        "Rampa metálica nivelada com pintura antiderrapante para agilizar cargas e descargas com total segurança."
     },
     {
       id: 2,
-      title: "Estrutura Metálica Industrial",
+      title: "Rampa metálica sob medida",
       category: "estruturas",
-      image: "/projects/p7V6xz3GbRJv.jpg",
+      image: "/projects/servicos/rampas-metalicas.jpg",
       description:
-        "Pórticos e vigas dimensionados para cargas industriais, com soldas contínuas e travamentos que sustentam pontes rolantes e passarelas técnicas."
+        "Estrutura reforçada com travessas e proteções laterais seguindo o layout do cliente."
     },
     {
       id: 3,
-      title: "Portão Automático",
-      category: "portoes",
-      image: "/projects/8NKevbKmzSw3.jpg",
+      title: "Rampa em fabricação",
+      category: "estruturas",
+      image: "/projects/servicos/rampas-metalicas-processo.jpg",
       description:
-        "Portão de correr motorizado com trilho nivelado e fecho eletrônico, pensado para agilizar o acesso sem comprometer a segurança perimetral."
+        "Processo interno de soldagem e inspeção dimensional garantindo paralelismo perfeito."
     },
     {
       id: 4,
-      title: "Grades de Proteção",
-      category: "grades",
-      image: "/projects/MDlcGq3CvCGF.jpg",
+      title: "Corrimão de segurança",
+      category: "acessos",
+      image: "/projects/servicos/corrimao-seguranca.jpg",
       description:
-        "Painéis modulares com solda MIG e pintura eletrostática, entregando proteção contínua para janelas e frentes comerciais com acabamento refinado."
+        "Corrimão tubular pintado em amarelo segurança, instalado com chumbadores químicos de alto desempenho."
     },
     {
       id: 5,
-      title: "Estrutura Metálica - Comercial",
-      category: "estruturas",
-      image: "/projects/ScEV0CDSixjW.jpg",
+      title: "Guarda-corpo industrial",
+      category: "acessos",
+      image: "/projects/servicos/guarda-corpo-industrial.jpg",
       description:
-        "Cobertura metálica comercial com pilares aparafusados e fechamento em policarbonato, garantindo luminosidade natural e resistência a intempéries."
+        "Proteção completa para mezaninos com fechamento inferior e portinhola para acesso controlado."
+    },
+    {
+      id: 6,
+      title: "Escada de acesso técnico",
+      category: "acessos",
+      image: "/projects/servicos/escadas-industriais.jpg",
+      description:
+        "Escada com patamares, guarda-corpo e rodízios com sistema de travamento para manutenção rápida."
+    },
+    {
+      id: 7,
+      title: "Proteção para paletes",
+      category: "protecao",
+      image: "/projects/servicos/protecao-paletes.jpg",
+      description:
+        "Defensas frontais e abraçadeiras de coluna absorvendo impactos de empilhadeiras e paleteiras."
+    },
+    {
+      id: 8,
+      title: "Proteções em tela",
+      category: "protecao",
+      image: "/projects/servicos/protecao-telas.jpg",
+      description:
+        "Painéis em tela eletrossoldada com portas e fechaduras, garantindo segurança sem bloquear ventilação."
+    },
+    {
+      id: 9,
+      title: "Mesas de refeitório",
+      category: "operacao",
+      image: "/projects/servicos/mesas-refeitorio.jpg",
+      description:
+        "Mesas metálicas resistentes à higienização frequente, com bancos integrados e pintura eletrostática."
+    },
+    {
+      id: 10,
+      title: "Mesas com rodízios",
+      category: "operacao",
+      image: "/projects/servicos/mesas-rodizios.jpg",
+      description:
+        "Conjunto com rodízios traváveis para movimentação ágil em linhas de montagem e manutenção."
+    },
+    {
+      id: 11,
+      title: "Treliças metálicas",
+      category: "estruturas",
+      image: "/projects/servicos/trelicas-metalicas.jpg",
+      description:
+        "Treliças dimensionadas para grandes vãos, já preparadas para receber cobertura metálica."
+    },
+    {
+      id: 12,
+      title: "Treliças na obra",
+      category: "estruturas",
+      image: "/projects/servicos/trelicas-metalicas-obra.jpg",
+      description:
+        "Montagem em campo com alinhamento a laser e supervisão direta da nossa equipe."
+    },
+    {
+      id: 13,
+      title: "Caçamba metálica",
+      category: "operacao",
+      image: "/projects/servicos/cacambaMetalica.jpg",
+      description:
+        "Caçamba basculante com reforços inferiores e olhais para içamentos seguros."
+    },
+    {
+      id: 14,
+      title: "Trincos personalizados",
+      category: "operacao",
+      image: "/projects/servicos/trincos-personalizados.jpg",
+      description:
+        "Produção seriada de trincos, dobradiças e peças especiais com acabamento anticorrosivo."
     }
   ];
 
   const categories = [
     { id: "todos", label: "Todos os Projetos" },
-    { id: "estruturas", label: "Estruturas Metálicas" },
-    { id: "portoes", label: "Portões" },
-    { id: "grades", label: "Grades de Proteção" }
+    { id: "estruturas", label: "Estruturas e Plataformas" },
+    { id: "acessos", label: "Escadas e Corrimãos" },
+    { id: "protecao", label: "Proteções" },
+    { id: "operacao", label: "Operação e Logística" }
   ];
 
-  const filteredProjects = selectedCategory === "todos" 
-    ? projects 
-    : projects.filter(p => p.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "todos"
+      ? projects
+      : projects.filter((p) => p.category === selectedCategory);
+
+  const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, 8);
+  const canShowMore = filteredProjects.length > visibleProjects.length;
+
+  const handleCategoryChange = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    setShowAll(false);
+  };
+
+  const handlePreview = (project: Project) => {
+    setSelectedProject(project);
+  };
 
   return (
     <div className={styles.gallery}>
@@ -75,7 +172,7 @@ export default function Gallery() {
                 className={`${styles.filterButton} ${
                   selectedCategory === category.id ? styles.active : ""
                 }`}
-                onClick={() => setSelectedCategory(category.id)}
+                onClick={() => handleCategoryChange(category.id)}
               >
                 {category.label}
               </button>
@@ -85,10 +182,18 @@ export default function Gallery() {
 
         {/* Projects Grid */}
         <div className={styles.projectsGrid}>
-          {filteredProjects.map((project) => (
+          {visibleProjects.map((project) => (
             <div key={project.id} className={styles.projectCard}>
               <div className={styles.projectImage}>
-                <img src={project.image} alt={project.title} />
+                <button
+                  type="button"
+                  className={styles.imagePreviewButton}
+                  onClick={() => handlePreview(project)}
+                  aria-label={`Ampliar imagem do projeto ${project.title}`}
+                >
+                  <img src={project.image} alt={project.title} />
+                  <span className={styles.imagePreviewLabel}>Ampliar imagem</span>
+                </button>
                 <div className={styles.overlay}>
                   <div className={styles.overlayContent}>
                     <h3>{project.title}</h3>
@@ -110,6 +215,18 @@ export default function Gallery() {
           </div>
         )}
 
+        {(canShowMore || showAll) && filteredProjects.length > 0 && (
+          <div className={styles.showMoreWrapper}>
+            <button
+              type="button"
+              className={styles.showMoreButton}
+              onClick={() => setShowAll((prev) => !prev)}
+            >
+              {showAll ? "Mostrar menos" : "Visualizar mais"}
+            </button>
+          </div>
+        )}
+
         {/* CTA Section */}
         <div className={styles.ctaBox}>
           <h2>Gostou de Algum Projeto?</h2>
@@ -119,6 +236,20 @@ export default function Gallery() {
           </a>
         </div>
       </div>
+
+      <Dialog open={Boolean(selectedProject)} onOpenChange={(open) => !open && setSelectedProject(null)}>
+        <DialogContent className={styles.imageDialog}>
+          {selectedProject && (
+            <>
+              <DialogHeader>
+                <DialogTitle>{selectedProject.title}</DialogTitle>
+              </DialogHeader>
+              <img src={selectedProject.image} alt={selectedProject.title} />
+              <DialogDescription className={styles.dialogDescription}>{selectedProject.description}</DialogDescription>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

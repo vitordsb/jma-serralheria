@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { servicesData } from "@/data/services";
+import { servicesData, type Service } from "@/data/services";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import styles from "./Services.module.css";
 
 export default function Services() {
   const [showAll, setShowAll] = useState(false);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   const whatsappNumber = "5511989425749";
 
@@ -11,13 +13,60 @@ export default function Services() {
 
   const hasMoreServices = servicesData.length > 6;
 
+  const segments = [
+    {
+      title: "Indústrias e centros logísticos",
+      description:
+        "Projetamos e reformamos portões, docas, plataformas e passagens internas que mantêm o fluxo produtivo contínuo e seguro.",
+    },
+    {
+      title: "Construtoras, retrofit e facilities",
+      description:
+        "Atuamos com terceirização de serralheria para obras especiais, assistência a engenharias e contratos de manutenção programada.",
+    },
+    {
+      title: "Condomínios corporativos e varejo",
+      description:
+        "Garantimos portarias, garagens e áreas técnicas operando em alta performance, com comunicação direta com síndicos e gestores.",
+    },
+  ];
+
+  const reformHighlights = [
+    {
+      title: "Produção e reforma interna",
+      description:
+        "Nossa estrutura fabril concentra corte, dobra, solda e pintura, entregando portões e plataformas com controle total de qualidade.",
+      items: [
+        "Projetos assinados por parceiros engenheiros e aprovados pela nossa equipe",
+        "Retrofit completo de portões e mezaninos já instalados",
+        "Equipe fixa dedicada ao acabamento interno antes da entrega",
+      ],
+    },
+    {
+      title: "Terceirização de mão de obra",
+      description:
+        "Disponibilizamos soldadores, montadores e líderes de frente para reforçar times de manutenção e obras parceiras.",
+      items: [
+        "Gestão compartilhada, com relatórios de avanço e inspeções conjuntas",
+        "Soldas especiais, caldeiraria leve e ajustes emergenciais",
+        "Serviços externos negociados caso a caso após visita técnica",
+      ],
+    },
+  ];
+
   return (
     <div className={styles.services}>
       <div className={styles.container}>
         <h1 className={styles.title}>Nossos Serviços</h1>
         <p className={styles.subtitle}>
-          Projetos industriais completos — rampas, proteções, mesas, escadas e muito mais. Todos executados pela
-          nossa equipe para atender empresas com segurança e acabamento profissional.
+          Portões, portas automáticas, mezaninos e acessos metálicos com foco em produção e reforma interna. Equipe própria,
+          soldas especiais e garantia de que cada entrega sai pronta para operar.
+        </p>
+        <div className={styles.infoBanner}>
+          <strong>Pronto atendimento:</strong> atendimentos profissionais emergenciais com soldadores credenciados e peças sobressalentes sempre disponíveis.
+        </div>
+        <p className={styles.internalNote}>
+          Prestamos serviços de produção e reforma prioritariamente dentro da nossa planta. Projetos externos são avaliados individualmente e negociados conforme escopo e prazo.
         </p>
 
         <div className={styles.servicesList}>
@@ -27,7 +76,15 @@ export default function Services() {
             return (
               <div key={service.title} className={styles.serviceCard}>
                 <div className={styles.serviceImage}>
-                  <img src={service.image} alt={service.title} />
+                  <button
+                    type="button"
+                    className={styles.imagePreviewButton}
+                    onClick={() => setSelectedService(service)}
+                    aria-label={`Ampliar imagem de ${service.title}`}
+                  >
+                    <img src={service.image} alt={service.title} />
+                    <span className={styles.imagePreviewLabel}>Ampliar imagem</span>
+                  </button>
                 </div>
                 <div className={styles.serviceContent}>
                   <h2 className={styles.serviceTitle}>{service.title}</h2>
@@ -68,6 +125,50 @@ export default function Services() {
           </div>
         )}
 
+        <section className={styles.segmentsSection}>
+          <div className={styles.sectionHeader}>
+            <h2>Quais segmentos atendemos?</h2>
+            <p>
+              Atuamos com serralheria industrial de alta precisão, levando soluções completas para ambientes internos de fábricas,
+              centros logísticos e empreendimentos corporativos.
+            </p>
+          </div>
+          <div className={styles.segmentsGrid}>
+            {segments.map((segment) => (
+              <article key={segment.title} className={styles.segmentCard}>
+                <h3>{segment.title}</h3>
+                <p>{segment.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.reformSection}>
+          <div className={styles.reformIntro}>
+            <h2>Reforma, produção e terceirização de mão de obra</h2>
+            <p>
+              Estruturamos times dedicados para produção interna e também oferecemos terceirização especializada para empresas que
+              precisam reforçar suas equipes de campo.
+            </p>
+          </div>
+          <div className={styles.reformGrid}>
+            {reformHighlights.map((highlight) => (
+              <article key={highlight.title} className={styles.reformCard}>
+                <h3>{highlight.title}</h3>
+                <p>{highlight.description}</p>
+                <ul>
+                  {highlight.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <p className={styles.externalNotice}>
+            Serviços externos ou em regimes especiais são combinados mediante visita técnica e negociação direta com nosso time comercial.
+          </p>
+        </section>
+
         <div className={styles.ctaBox}>
           <h2>Interessado em Nossos Serviços?</h2>
           <p>Entre em contato conosco para discutir seu projeto e receber um orçamento personalizado.</p>
@@ -76,6 +177,20 @@ export default function Services() {
           </a>
         </div>
       </div>
+
+      <Dialog open={Boolean(selectedService)} onOpenChange={(open) => !open && setSelectedService(null)}>
+        <DialogContent className={styles.imageDialog}>
+          {selectedService && (
+            <>
+              <DialogHeader>
+                <DialogTitle>{selectedService.title}</DialogTitle>
+              </DialogHeader>
+              <img src={selectedService.image} alt={selectedService.title} />
+              <DialogDescription className={styles.dialogDescription}>{selectedService.description}</DialogDescription>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
