@@ -15,7 +15,7 @@ export const servicesData: Service[] = [
       "Instalação de travamentos adicionais e suportes para novos equipamentos",
       "Time treinado em NR-35 com linha de vida e proteção completa"
     ],
-    image: "/projects/servicos/servicos-personalizados.jpg"
+    image: "/projects/servicos/servicos_personalizados.jpeg"
   },
   {
     title: "Tampas metálicas em chapa xadrez",

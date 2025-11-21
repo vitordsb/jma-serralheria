@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.section}>
-          <h3 className={styles.sectionTitle}>JMA Serralheria</h3>
+          <h3 className={styles.sectionTitle}>JMA Serralheria Artes</h3>
           <p className={styles.description}>
             Desde 1992 fazendo serviços com qualidade e relevância no mercado.
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>&copy; 2025 JMA Serralheria. Todos os direitos reservados.</p>
+        <p>&copy; 2025 JMA Serralheria Artes. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

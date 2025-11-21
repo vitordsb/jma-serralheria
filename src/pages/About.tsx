@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Sobre a JMA Serralheria</h1>
+        <h1 className={styles.title}>Sobre a JMA Serralheria Artes</h1>
 
         <div className={styles.content}>
           <section className={styles.section}>
